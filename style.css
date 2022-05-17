@@ -13,12 +13,24 @@ body{
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 40rem;
+    background-image: url("https://media.discordapp.net/attachments/895299586091024404/974636660102942720/Untitled-1.webp?width=1237&height=676");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header, footer{
     background-color: #7d0003;
     color: white;
     height: 6rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.Bannergif{
+    max-height: 5.5rem;
 }
 
 main{
@@ -72,9 +84,9 @@ nav > ul > li > a{
 h1{
     font-size: 8rem;
     color: #e7e7e7f1;
-    margin-bottom: 0.8rem;
+    margin-bottom: 5rem;
     text-shadow: 0.3rem 0.3rem black;
-    margin-top: 1rem;
+    margin-top: 16rem;
 }
 
 .container-article-kaartjes{
@@ -127,8 +139,22 @@ h1{
 }
 
 
+
 @media only screen and (max-width: 28.125rem) {
     h1{
         font-size: 8rem;
+    }
+  }
+
+
+@media only screen and (max-width: 115.5em) {
+    body{
+        background-size: 250%;
+    }
+  }
+
+@media only screen and (max-width: 58.2em) {
+    body{
+        background-size: 1000%;
     }
   }
