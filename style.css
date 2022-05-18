@@ -15,7 +15,7 @@ body{
     font-weight: 40rem;
     background-image: url("https://cdn.discordapp.com/attachments/976173713110224956/976233818501574666/Untitled-1_1920x1080.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
 }
 
 header, footer{
@@ -280,7 +280,7 @@ h1{
 
   @media only screen and (max-width: 45.6rem) {
     .Headerknop{
-        font-size: 44%;
+        font-size: 42%;
     }
   }
 
