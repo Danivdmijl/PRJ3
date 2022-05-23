@@ -1,34 +1,11 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0px;padding:0px;}
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-table{border-collapse:collapse;border-spacing:0;}
-/* start editing from here */
-a{text-decoration:none;}
-.txt-rt{text-align:right;}/* text align right */
-.txt-lt{text-align:left;}/* text align left */
-.txt-center{text-align:center;}/* text align center */
-.float-rt{float:right;}/* float right */
-.float-lt{float:left;}/* float left */
-.clear{clear:both;}/* clear float */
-.pos-relative{position:relative;}/* Position Relative */
-.pos-absolute{position:absolute;}/* Position Absolute */
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
-.vertical-top{	vertical-align:top;}/* vertical align top */
-nav.vertical ul li{	display:block;}/* vertical menu */
-nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
-img{max-width:100%;}
-/*end reset*/
-body{
-	font-family: 'Open Sans', sans-serif;
-	background: url(../images/banner5.jpg) no-repeat 0px 0px;
-	background-size:cover;
-	
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.header {
-    text-align: center;
-    margin-top: 4em;
+
+body{
+	font-family: 'Open Sans', sans-serif;	
 }
 .header h1 {
     font-size: 3em;
@@ -52,7 +29,7 @@ body{
     border: none;
     outline: none;
     font-size: 0.95em;
-    border-top: 3px solid #0c6da2;
+    border-top: 3px solid #d20005;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -91,10 +68,10 @@ body{
     display: block;
     margin-top: 1em;
     outline: none;
-   background: #0c6da2;
+   background: #d20005;
     color: #fff;
     border: none;
-    width: 100%;
+    width: 96.5%;
 	cursor: pointer;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -124,7 +101,75 @@ body{
 .footer-w3-agile p a {
     color: #fff;
 }
-/**responsive**/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://cdn.discordapp.com/attachments/976173713110224956/976233818501574666/Untitled-1_1920x1080.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, footer{
+    background-color: #7d0003;
+    color: white;
+    height: 3.7rem;
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.Bannergif{
+    max-height: 5.5rem;
+}
+
+main{
+    padding: 4rem;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+nav > ul > li{
+    width: 47%;
+    height: 100%;
+}
+
+.active{
+    background: #d20005;
+}
+
+nav > ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align-last: center;
+    line-height: 3.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 @media(max-width:1440px){
 	
 }

@@ -15,7 +15,7 @@ body{
     font-weight: 40rem;
     background-image: url("https://cdn.discordapp.com/attachments/976173713110224956/976233818501574666/Untitled-1_1920x1080.png");
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
 }
 
 header, footer{
@@ -31,6 +31,8 @@ header, footer{
 footer{
     display: flex;
     justify-content: center;
+    justify-content: flex-start;
+    gap: 56.5rem;
 }
 
 .Bannergif{
@@ -79,13 +81,6 @@ nav > ul > li > a{
     color: white;
 }
 
-
-.tekst h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 h1{
     font-size: 8rem;
     color: #e7e7e7f1;
@@ -96,7 +91,9 @@ h1{
     animation-duration: 1.3s;
     animation-delay: 0.3s;
     animation-fill-mode: backwards;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-article-kaartjes{
@@ -232,6 +229,15 @@ h1{
     border-bottom: 0.5rem solid rgba(0,0,0,0.2);
 }
 
+.CTpagina{
+    height: 100%;
+    max-height: 10%;
+    line-height: 6rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 3.5rem;
+}
+
 @keyframes fadein{
     from{
         opacity: 0;
@@ -243,7 +249,7 @@ h1{
     }
 }
 
-@media only screen and (max-width: 112.5rem) {
+/* @media only screen and (max-width: 112.5rem) {
     body{
         background-size: 200%;
     }
@@ -264,7 +270,7 @@ h1{
     body{
         background-size: 1000%;
     }
-  }
+  } */
 
 @media only screen and (max-width: 28.125rem) {
     h1{
