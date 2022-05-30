@@ -40,7 +40,7 @@ footer{
 }
 
 main{
-    padding: 4rem;
+    padding: 4rem
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -303,4 +303,17 @@ h1{
     .reviews{
         width: 100%;
     }
+}
+
+@media screen and (max-width: 75.6875rem) {
+
+    .Bannergif{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
 }
