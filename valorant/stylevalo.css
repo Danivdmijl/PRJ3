@@ -31,7 +31,7 @@ header{
     max-height: 10%;
     line-height: 6rem;
     text-decoration: none;
-    color: white;
+    color: blue;
     margin-left: 3.5rem;
 }
 
@@ -53,8 +53,9 @@ footer{
 }
 
 main{
-    padding: 4rem
+    padding: 4rem;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 nav{
@@ -131,6 +132,43 @@ nav > ul > li > a{
     animation-fill-mode: backwards;
 }
 
+
+.art{
+    /* height: 45rem; */
+    width: 35rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: white;
+    margin: 2rem;
+    height: 43rem;
+}
+
+.art img{
+    max-height: 10rem;
+    width: 20rem;
+    margin: 2rem;
+}
+
+.h2article{
+    font-size: 3rem;
+}
+
+.art p{
+    max-width: 20rem;
+    font-size: 2rem;
+}
+
+.art h3{
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.art h4{
+    font-size: 1.5rem;
+}
+
 .label{
     color: white;
 }
@@ -173,6 +211,7 @@ nav > ul > li > a{
     animation-duration: 1.3s;
     animation-delay: 0.3s;
     animation-fill-mode: backwards;
+    margin-top: 5rem;
 }
 
 .game:hover{
@@ -224,4 +263,13 @@ nav > ul > li > a{
         justify-content: center;
     }
 
+}
+
+@media screen and (max-width: 115.9375rem) {
+    .games{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }   
 }
