@@ -57,7 +57,7 @@ $result = $connection->query('SELECT * FROM `productvalo`');
 
     </main>
     <footer>
-        <a class="CTpagina" href="Contactpagina.html">ContactPagina</a>
+        <a class="CTpagina" href="ContactP/contact.php">ContactPagina</a>
         <img class="Bannergif" src="https://media.discordapp.net/attachments/895299586091024404/974637131064549426/3.gif" alt="">
     </footer>
     <script src="main.js"></script>
