@@ -1,5 +1,14 @@
+<?php
+require 'functions.php';
+$connection = dbConnect();
+
+$result = $connection->query('SELECT * FROM `productbestsell`');
+
+?>  
+
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,47 +17,30 @@
     <script src="main.js" defer></script>
     <title>JDMerch</title>
 </head>
+
 <body>
     <header id="header">
         <nav>
             <ul>
                 <li class="active Headerknop"><a href="index.html">Home</a></li>
                 <li><a class="Headerknop" href="valorant/Valorant.php">Valorant</a></li>
-                <li><a class="Headerknop" href="overwatch.html">Overwatch</a></li>
-                <li><a class="Headerknop" href="rocket.html">Rocket League</a></li>
+                <li><a class="Headerknop" href="overwatch/overwatch.php">Overwatch</a></li>
+                <li><a class="Headerknop" href="rocketl/rocket.php">Rocket League</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Best verkochte producten</h1>
         <section onclick="Klikscript" class="container-article-kaartjes">
-            <article class="container-kaartjes">
-                <article class="kaartjes kaart-1">
-                    <img class="FotoKaartjes" src="img/0114086931_1-removebg-preview.pn" alt="">
-                    <h2 class="TitelKaartjes"></h2>
-                    <h3 class="BeschrijvingKaartjes"></h3>
+            <?php foreach ($result as $row) : ?>
+                <article class="container-kaartjes">
+                    <article class="kaartjes kaart-1">
+                        <img class="FotoKaartjes" src="img/<?php echo $row['productfoto']; ?>" alt="">
+                        <h2 class="TitelKaartjes"><?php echo $row['productnaam']; ?></h2>
+                        <a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a>
+                    </article>
+                <?php endforeach; ?>
                 </article>
-                <article class="kaartjes kaart-1">
-                    <img class="FotoKaartjes" src="img/0114086931_1-removebg-preview.pn" alt="">
-                    <h2 class="TitelKaartjes"></h2>
-                    <h3 class="BeschrijvingKaartjes"></h3>
-                </article>
-                <article class="kaartjes kaart-1">
-                    <img class="FotoKaartjes" src="img/0114086931_1-removebg-preview.pn" alt="">
-                    <h2 class="TitelKaartjes"></h2>
-                    <h3 class="BeschrijvingKaartjes"></h3>
-                </article>
-                <article class="kaartjes kaart-1">
-                    <img class="FotoKaartjes" src="img/0114086931_1-removebg-preview.pn" alt="">
-                    <h2 class="TitelKaartjes"></h2>
-                    <h3 class="BeschrijvingKaartjes"></h3>
-                </article>
-                <article class="kaartjes kaart-1">
-                    <img class="FotoKaartjes" src="img/0114086931_1-removebg-preview.pn" alt="">
-                    <h2 class="TitelKaartjes"></h2>
-                    <h3 class="BeschrijvingKaartjes"></h3>
-                </article>
-            </article>
         </section>
 
         <h2 class="t-reviews">Reviews</h2>
@@ -62,7 +54,7 @@
                         &#9733;
                         &#9733;
                     </section>
-                    <p>1. Weide variatie aan spullen en prima prijzen, ook een mooi aangekleede site die vooral heel duidelijk is. Makkelijk mijn spullen kunnen bestellen zonder enige problemen! - Peter Plakstrip 
+                    <p>1. Weide variatie aan spullen en prima prijzen, ook een mooi aangekleede site die vooral heel duidelijk is. Makkelijk mijn spullen kunnen bestellen zonder enige problemen! - Peter Plakstrip
                     </p>
                 </li>
                 <li class="review">
@@ -117,4 +109,5 @@
         <img class="Bannergif" src="https://media.discordapp.net/attachments/895299586091024404/974637131064549426/3.gif" alt="">
     </footer>
 </body>
+
 </html>

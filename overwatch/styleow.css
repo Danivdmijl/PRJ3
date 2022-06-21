@@ -20,7 +20,6 @@ body{
 header, footer{
     background-color: #7d0003;
     height: 6rem;
-    width: 100%;
 }
 
 header{
@@ -98,7 +97,7 @@ nav > ul > li > a{
 .inputs{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 4rem;
     margin-bottom: 15rem;
     margin-left: 25rem;

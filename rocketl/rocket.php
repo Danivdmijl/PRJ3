@@ -2,7 +2,7 @@
 require 'functions.php';
 $connection = dbConnect();
 
-$result = $connection->query('SELECT * FROM `productvalo`');
+$result = $connection->query('SELECT * FROM `productrocket`');
 
 ?>
 
@@ -14,7 +14,7 @@ $result = $connection->query('SELECT * FROM `productvalo`');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filter</title>
-    <link rel="stylesheet" href="stylevalo.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="stylerocket.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -22,9 +22,9 @@ $result = $connection->query('SELECT * FROM `productvalo`');
         <nav>
             <ul class="Ullist">
                 <li class="knoppen Headerknop"><a href="http://localhost/bap/BO%20-%20Copy/">Home</a></li>
-                <li class="knoppen"><a class="active Headerknop" href="">Valorant</a></li>
+                <li class="knoppen"><a class="Headerknop" href="http://localhost/bap/BO%20-%20Copy/valorant/Valorant.php">Valorant</a></li>
                 <li class="knoppen"><a class="Headerknop" href="http://localhost/bap/BO%20-%20Copy/overwatch/overwatch.php">Overwatch</a></li>
-                <li class="knoppen"><a class="Headerknop KnopRL" href="http://localhost/bap/BO%20-%20Copy/rocketl/rocket.php">Rocket League</a></li>
+                <li class="knoppen"><a class="active Headerknop KnopRL" href="/rocket.html">Rocket League</a></li>
             </ul>
         </nav>
     </header>
